@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>
+            <%= locals.title %>
+        </title>
+        <link rel="stylesheet" type="text/css" href="/home.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!--TODO Application form-->
+        <div id="TODO-Container">
+            <form action="/create-list" method="POST">
+            <!--Task Description-->
+            <div class="header">
+                <center><h1 style="margin-bottom: 2vh; color: black;"><i class="fas fa-clipboard-list"></i> MY TODOS</h1></center>
+            </div>
+            <form action="/create-list" method="POST">
+            <div class="Description">
+                <label for="description">DESCRIPTION</label>
+                <input type="text" name="Activity" placeholder="What do you need to do?" required id="Activity">
+            </div>
+            <div class="header1">
+                <!--Setting the dropdown list for type of task-->
+                <div class="col1">
+                    <label for="Category">CATEGORY</label>
+                    <select id="Category" name="Work" required>
+                        <option>Choose a category</option>
+                        <option>Personal</option>
+                        <option>School</option>
+                        <option>Work</option>
+                        <option>Cleaning</option>
+                        <option>Others</option>
+                    </select>
+                </div>
+                <!--Date Selection option-->
+                <div class="col1">
+                    <label for="Date">DUE DATE</label><br>
+                    <input type="date" name="date" id="Date" placeholder="dd/mm/yyyy" required>
+                </div>
+            </div>
+            <!--Buttons Area-->
+            <div class="buttons" style="width: 100%; height: 22%; margin-top: -11px; display: inline-block; white-space: normal;">   
+                <center><button type="submit" id="button1"><span><i class="fas fa-plus" style="color:white; margin-left: 0px; height: 10px;"></i></span>ADD TASKS</button></center>
+            </form>
+            <!--*************************************************-->
+            <!--Deleting the Activities-->
+                <form action="/delete-activity" method="POST">
+                    <center><button type="submit" style="background-color: red;" id="button2"><i class="far fa-trash-alt"></i> &nbsp;DELETE</button></center>
+            </div>  
+            <!--Task Menu-->
+            <div id="Activity">
+                <% for(let i of TodoList){%>
+                    <div class="container">
+                        <!--Adding query in the checkbox to get the id of Task to be deleted-->
+                        <input type="checkbox" name="arr[]" value=<%= i._id%>><br>
+                        <span class="task">
+                            <h3><%= i.Activity%></h3>
+                            <h5 style="color:grey;"><i class="far fa-calendar-alt"></i> &nbsp;<%= i.date%></h5>
+                        </span>
+                        <div class="task-type"><span><%=i.Work%></span></div>
+                    </div>
+                </form>   
+                <%}%>
+            </div>
+            <!--************************************************************-->        
+        </div>
+    </body>
+</html>

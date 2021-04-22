@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>
+            <%= locals.title %>
+        </title>
+        <body>
+            <h1>Playground</h1>
+            <ul>
+                <% for (let i=1; i<50; i++) { %>
+                <li>
+                    <%= i %>
+                </li>
+                <%}%>
+            </ul>
+            <% if (true){%>
+                <h1>Its true I am boss!!</h1>
+                <%}else{%>
+                    <h1>Sorry its not correct!!</h1>
+                    <%}%>
+        </body>
+    </head>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "todo_list",
+  "version": "1.0.0",
+  "description": "It is a list of events or things done in day to day life.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lifestyle"
+  ],
+  "author": "Adarsh Arya",
+  "license": "ISC",
+  "dependencies": {
+    "date-and-time": "^0.13.1",
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.7"
+  }
+}

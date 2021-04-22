@@ -1,0 +1,50 @@
+body{
+    align-content: center;
+    margin:0px;
+}
+
+#header{
+    margin-top: 20px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.hq{
+    border-radius: 2px solid black;
+}
+
+
+#contacts{
+    background-color:rgba(0, 95, 238, 0.842);
+    height: 8%;
+    width: 20%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid white;
+}
+
+#contacts p{
+    color:white;
+    font-weight: 600;
+}
+
+#name,#Cnumber{
+    margin-left: 9px;
+    width: 50%;
+    height: 100%;
+}
+
+#form{
+    margin-left:500px;
+    margin-top: 5px;
+}
+
+#contacts:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 6px 4px rgba(241, 8, 8, 0.849);
+    background-color:grey;
+}
+
+

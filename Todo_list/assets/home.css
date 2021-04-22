@@ -1,0 +1,258 @@
+/* Styling the body */
+body{
+    margin: 0px;
+    background-color: grey;
+    align-items: center;
+  
+}
+
+/* Styling the TODO List Container */
+#TODO-Container{
+    margin-top: 2px;
+    width:50%;
+    height:96%;
+    background-color: white;
+    margin: auto;
+    
+}
+
+
+.header{
+    height: 10%;
+    width: 100%;
+    padding-top: 1 rem;
+    border: 1px solid grey;
+    margin: auto;
+    overflow: hidden;
+    padding-bottom: 3px;
+    background-color: lemonchiffon;
+    background: repeating-linear-gradient(rgba(0, 128, 0, 0.425),lemonchiffon);
+}
+
+/*Styling the Task description Area */
+.Description{
+    height: 12%;
+    width: 98.2%;
+    padding-top: 1 rem;
+    padding: 6px;
+}
+
+label{
+    font-size: 3.2vh;
+    outline-style: none;
+    border: none;
+}
+
+.header1{
+    height: 12%;
+    width: 100%;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: row;
+ 
+}
+
+.col1{
+    height: 86%;
+    width: 50%;
+    border-right: 1px solid grey;
+    margin-left: 0px;
+    padding: 5px;
+    border-left: none;
+}
+
+/*Styling the TextBox*/
+input[type=text]{
+    height: 100%;
+    width: 80%;
+    margin-left: 0px;
+    box-sizing: border-box; 
+    color: grey;
+    font-size: 3vh;
+    outline-style: none;
+    background:transparent
+}
+
+#buttons{
+    height: auto;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    justify-content: center;
+}
+
+
+/*Styling the buttons*/
+button{
+    height: 50%;
+    width: 25%;
+    margin: 10px auto;
+    outline-style: none;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+button:hover{
+    box-shadow:0px 0px 3px 4px rgba(0, 0, 255, 0.596);
+}
+
+.addsymbol{
+    position: absolute;
+    margin-left:50%;
+    
+}
+form  input:focus{
+    outline: none;
+}
+
+
+select{
+    color: grey;
+    width:100%;
+    box-sizing: border-box; 
+    border: none; 
+}
+
+
+input{
+    border: none;
+    outline-style: none;
+    outline: none;
+    background: transparent;
+}
+
+select{
+    outline-style: none;
+    outline-style: none;
+    font-size: 3vh;
+    background: transparent;
+}
+
+/*Styling the Date Input*/
+input[type=date] {
+    margin-left: 0px;
+    width: 100%;
+    padding-left: 2px;
+    box-sizing: border-box;
+    border: none; 
+    color: grey; 
+    font-size: 3vh;
+    outline-style: none;
+}
+
+
+.col1:hover{
+    background-color: rgba(128, 128, 128, 0.336);
+}
+
+
+
+
+
+div p{
+    font-family: 'Times New Roman', Times, serif;
+    color: grey;
+}
+
+
+.header:hover{
+    background-color: rgba(128, 128, 128, 0.336);
+}
+
+.Description:hover{
+    background-color: rgba(128, 128, 128, 0.336);
+}
+
+button{
+    width: 150px;
+    height: 45px;
+    font-size: 18px;
+    padding: 4px;
+    background-color: darkslategrey;
+    color: white;
+    margin-top: 3vh;
+}
+
+
+/* T0-DO-TASKS Container styling */
+.container{
+    width: 100%;
+    height: 32%;
+    border: 1px solid gray;
+    float: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background:repeating-linear-gradient(moccasin,whitesmoke);
+}
+
+.container:hover{
+    transform: scale(1.07);
+}
+
+/* CheckBox-Styling */
+.container input{
+    float: left;
+    width: 22%;
+    height: 3.5vh;
+    margin: 0;
+    font-size: 1vh;
+    border: none;
+    background-color: transparent;
+}
+
+
+
+.task{
+    width: 65%;
+    color: rgb(34, 32, 32);
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    text-transform: capitalize;
+
+}
+.work{
+   position: relative;
+   left:450px;
+}
+
+.Act p{
+    font-family: 'Times New Roman', Times, serif;
+    color: grey;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+.task-type{
+    margin-top: 13px;
+    width: 120px;
+    height: 24px;
+    padding-left: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: crimson;
+    color: white;
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 3px whitesmoke;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 3.5vh;
+    margin-bottom: 40px;
+    margin-right: 25px;
+    position: relative;
+}
+
+/* T0-DO-TASKS Area styling */
+#Activity{
+    width: 100%;
+    height:40%;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scroll-behavior: auto;
+    
+}
+
